@@ -13,12 +13,37 @@ var DataBidingComponent = (function () {
     function DataBidingComponent() {
         this.url = 'http://loiane.com';
         this.urlImg = 'http://lorempixel.com/400/200/food/';
+        this.conteudoAtual = '';
+        this.conteudoSalvo = '';
+        this.isMouseOver = false;
     }
+    DataBidingComponent.prototype.onClick = function () {
+        alert('Olár!');
+    };
+    DataBidingComponent.prototype.onKeyup = function (event) {
+        console.log(event.target.value);
+        this.conteudoAtual = event.target.value;
+    };
+    DataBidingComponent.prototype.onSave = function (value) {
+        this.conteudoSalvo = value;
+    };
+    DataBidingComponent.prototype.onMouseSpan = function () {
+        this.isMouseOver = !this.isMouseOver;
+    };
     DataBidingComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
             selector: 'exemplo-data-biding',
             templateUrl: 'data-biding.component.html',
+            /* styles: [
+              `
+                .highlight{
+                  background-color: yellow;
+                  font-weight: bold;
+                }
+              `
+            ] */
+            styleUrls: ['data-biding.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], DataBidingComponent);

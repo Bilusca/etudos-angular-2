@@ -28,4 +28,22 @@
       <div class="alert alert-danger" style="display:none;" [style.display]="classe.value === 'alert-danger' ? 'block' : 'none' " >Só aparece quando for Erro.</div>
     </div>
   </article>
+  <article class="event-biding">
+    <h3>Event biding</h3>
+    <div class="row">
+      <button class="button" (click)="onClick()">Me clique</button>
+      <input type="text" (keyup)="onKeyup($event)"
+        (keyup.enter)="onSave(campo.value)"
+        (blur)="onSave(campo.value)"
+        #campo>
+      <div>Conteudo atual: {{conteudoAtual}}</div>
+      <div>Conteudo savlo: {{conteudoSalvo}}</div>
+      <br><br>
+      <span (mouseover)="onMouseSpan()"
+            (mouseout)="onMouseSpan()"
+            [class.highlight]="isMouseOver">
+            Passe o mouse sobre mim.
+      </span>
+    </div>
+  </article>
 </section>
