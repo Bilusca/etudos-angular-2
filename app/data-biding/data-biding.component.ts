@@ -25,6 +25,9 @@ export class DataBidingComponent {
 
   isMouseOver = false;
 
+  nome : string = '';
+  cor: string = '';
+
   onClick(){
     alert('Olár!');
   }

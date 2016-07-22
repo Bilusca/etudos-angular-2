@@ -16,6 +16,8 @@ var DataBidingComponent = (function () {
         this.conteudoAtual = '';
         this.conteudoSalvo = '';
         this.isMouseOver = false;
+        this.nome = '';
+        this.cor = '';
     }
     DataBidingComponent.prototype.onClick = function () {
         alert('Olár!');

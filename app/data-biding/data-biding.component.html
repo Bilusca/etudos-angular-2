@@ -47,3 +47,18 @@
     </div>
   </article>
 </section>
+<section class="two-way-binding">
+  <article>
+    <h3>Two way data-biding</h3>
+    <div>
+      <input type="text" [(ngModel)]="nome">
+
+      <p>Você escreveu {{nome}}</p>
+    </div>
+    <div>
+      <input type="text" [(ngModel)]="cor">
+
+      <div style="width:100px;height:100px" [style.background]="cor">Você escreveu {{cor}}</div>
+    </div>
+  </article>
+</section>
