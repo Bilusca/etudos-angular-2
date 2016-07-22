@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { InputPropertyComponent } from './input-property.component'
+
 @Component({
   moduleId: module.id,
   selector: 'exemplo-data-biding',
@@ -12,7 +14,8 @@ import { Component } from '@angular/core';
       }
     `
   ] */
-  styleUrls: ['data-biding.component.css']
+  styleUrls: ['data-biding.component.css'],
+  directives: [InputPropertyComponent]
 })
 export class DataBidingComponent {
   constructor() {  }
@@ -27,6 +30,8 @@ export class DataBidingComponent {
 
   nome : string = '';
   cor: string = '';
+
+  nomeCurso : string = 'Curso Angular 2';
 
   onClick(){
     alert('Olár!');

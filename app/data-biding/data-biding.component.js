@@ -9,6 +9,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var input_property_component_1 = require('./input-property.component');
 var DataBidingComponent = (function () {
     function DataBidingComponent() {
         this.url = 'http://loiane.com';
@@ -18,6 +19,7 @@ var DataBidingComponent = (function () {
         this.isMouseOver = false;
         this.nome = '';
         this.cor = '';
+        this.nomeCurso = 'Curso Angular 2';
     }
     DataBidingComponent.prototype.onClick = function () {
         alert('Olár!');
@@ -45,7 +47,8 @@ var DataBidingComponent = (function () {
                 }
               `
             ] */
-            styleUrls: ['data-biding.component.css']
+            styleUrls: ['data-biding.component.css'],
+            directives: [input_property_component_1.InputPropertyComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], DataBidingComponent);
