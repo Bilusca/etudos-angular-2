@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
-import { InputPropertyComponent } from './input-property.component'
+import { InputPropertyComponent } from './input-property.component';
+import { OutputPropertyComponent } from './output-property.component';
 
 @Component({
   moduleId: module.id,
@@ -15,7 +16,7 @@ import { InputPropertyComponent } from './input-property.component'
     `
   ] */
   styleUrls: ['data-biding.component.css'],
-  directives: [InputPropertyComponent]
+  directives: [InputPropertyComponent, OutputPropertyComponent]
 })
 export class DataBidingComponent {
   constructor() {  }
@@ -33,6 +34,8 @@ export class DataBidingComponent {
 
   nomeCurso : string = 'Curso Angular 2';
 
+  valorInicial : number = 10;
+
   onClick(){
     alert('Olár!');
   }
@@ -48,5 +51,9 @@ export class DataBidingComponent {
 
   onMouseSpan(){
     this.isMouseOver = !this.isMouseOver;
+  }
+
+  onValorMudou(event){
+    alert(event.novoValor);
   }
 }
