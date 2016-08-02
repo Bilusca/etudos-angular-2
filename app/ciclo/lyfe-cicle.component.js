@@ -65,4 +65,4 @@ var LifeCycleComponent = (function () {
     return LifeCycleComponent;
 }());
 exports.LifeCycleComponent = LifeCycleComponent;
-//# sourceMappingURL=life-cycle.component.js.map
+//# sourceMappingURL=lyfe-cicle.component.js.map
