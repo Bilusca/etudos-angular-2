@@ -1,8 +1,5 @@
 import { Component } from '@angular/core';
 
-import { InputPropertyComponent } from './input-property.component';
-import { OutputPropertyComponent } from './output-property.component';
-
 @Component({
   moduleId: module.id,
   selector: 'exemplo-data-biding',
@@ -15,8 +12,7 @@ import { OutputPropertyComponent } from './output-property.component';
       }
     `
   ] */
-  styleUrls: ['data-biding.component.css'],
-  directives: [InputPropertyComponent, OutputPropertyComponent]
+  styleUrls: ['data-biding.component.css']
 })
 export class DataBidingComponent {
   constructor() {  }

@@ -9,8 +9,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var input_property_component_1 = require('./input-property.component');
-var output_property_component_1 = require('./output-property.component');
 var DataBidingComponent = (function () {
     function DataBidingComponent() {
         this.url = 'http://loiane.com';
@@ -52,8 +50,7 @@ var DataBidingComponent = (function () {
                 }
               `
             ] */
-            styleUrls: ['data-biding.component.css'],
-            directives: [input_property_component_1.InputPropertyComponent, output_property_component_1.OutputPropertyComponent]
+            styleUrls: ['data-biding.component.css']
         }), 
         __metadata('design:paramtypes', [])
     ], DataBidingComponent);

@@ -9,27 +9,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var common_1 = require('@angular/common');
 var cursos_service_1 = require('./cursos.service');
-var CursosComponent = (function () {
-    function CursosComponent(cursoService) {
-        this.nome = 'Lucas';
-        this.cursos = cursoService.getCursos();
+var cursos_component_1 = require('./cursos.component');
+var CursosModule = (function () {
+    function CursosModule() {
     }
-    CursosComponent = __decorate([
-        core_1.Component({
-            moduleId: module.id,
-            selector: 'cursos-lista',
-            /* template: `
-              <p>Olá, meu nome é {{nome}}</p>
-              <ul>
-                <li *ngFor="let curso of cursos">{{curso}}</li>
-              </ul>
-            ` */
-            templateUrl: 'cursos.component.html'
+    CursosModule = __decorate([
+        core_1.NgModule({
+            imports: [common_1.CommonModule],
+            declarations: [cursos_component_1.CursosComponent],
+            exports: [cursos_component_1.CursosComponent],
+            providers: [cursos_service_1.CursosService]
         }), 
-        __metadata('design:paramtypes', [cursos_service_1.CursosService])
-    ], CursosComponent);
-    return CursosComponent;
+        __metadata('design:paramtypes', [])
+    ], CursosModule);
+    return CursosModule;
 }());
-exports.CursosComponent = CursosComponent;
-//# sourceMappingURL=cursos.component.js.map
+exports.CursosModule = CursosModule;
+//# sourceMappingURL=cursos.module.js.map

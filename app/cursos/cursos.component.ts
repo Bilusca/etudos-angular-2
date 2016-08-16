@@ -11,8 +11,7 @@ import { CursosService } from './cursos.service';
       <li *ngFor="let curso of cursos">{{curso}}</li>
     </ul>
   ` */
-  templateUrl: 'cursos.component.html',
-  providers: [CursosService]
+  templateUrl: 'cursos.component.html'
 })
 
 export class CursosComponent {
